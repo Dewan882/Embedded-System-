@@ -1,0 +1,56 @@
+int dewan=2;
+int nahid=5;
+int hit=7;
+int islam;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(dewan,OUTPUT); // 2 out
+pinMode(hit,OUTPUT); // 7 out
+pinMode(nahid,INPUT); // 5 input
+Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+islam = analogRead(nahid);
+Serial.println(islam);
+
+if (islam>200  && islam < 500) {
+ digitalWrite(dewan,HIGH);
+ Serial.println("i am from 200");
+ 
+  // do Thing A
+}
+else if (islam>500 ) {
+ digitalWrite(hit,HIGH);
+ Serial.println("i am from 500");
+  // do Thing B
+}
+
+
+
+
+else {
+  
+  digitalWrite(dewan,LOW);
+  digitalWrite(hit,LOW);
+  Serial.println("i am from off");
+  // do Thing C
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

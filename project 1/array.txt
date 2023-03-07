@@ -1,0 +1,28 @@
+int patern[]={0,1,2,3};
+int x;
+int y;
+
+
+
+void setup() {
+  for (x=0;x<=3;x++)
+{
+  pinMode(patern[x],OUTPUT);
+  }
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+for(y=0;y<=3;y++)
+{
+  digitalWrite(patern[y],HIGH);
+delay(1000);
+
+
+  digitalWrite(patern[y],LOW);
+delay(1000);
+}
+  // putur main code here, to run repeatedly:
+
+}

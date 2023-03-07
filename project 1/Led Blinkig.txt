@@ -1,0 +1,27 @@
+int aa=1;
+int bb=2;
+int cc=3;
+int dd=0;
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(aa,OUTPUT);
+pinMode(bb,OUTPUT);
+pinMode(cc,OUTPUT);
+pinMode(dd,OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(aa,HIGH);
+  digitalWrite(bb,HIGH);
+  digitalWrite(cc,HIGH);
+  digitalWrite(dd,HIGH);
+  delay(500);
+  digitalWrite(aa,LOW);
+  digitalWrite(bb,LOW);
+  digitalWrite(cc,LOW);
+  digitalWrite(dd,LOW);
+  delay(500);

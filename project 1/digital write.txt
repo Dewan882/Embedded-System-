@@ -1,0 +1,45 @@
+int dewan=2;
+int nahid=5;
+int islam;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(dewan,OUTPUT);
+pinMode(nahid,INPUT);
+Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+int islam = digitalRead(nahid);
+
+
+
+if (islam == 0) {
+  
+digitalWrite(dewan,HIGH);
+Serial.println("I am from if con");
+
+
+}
+
+else {
+  digitalWrite(dewan,LOW);
+  Serial.println("I am from else con");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
